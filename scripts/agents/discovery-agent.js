@@ -173,23 +173,15 @@ class DiscoveryAgent {
         continue;
       }
 
-      try {
-        const response = await axios.head(business.url, {
-          timeout: 5000,
-          maxRedirects: 3,
-          validateStatus: (status) => status >= 200 && status < 400,
-        });
-
+      // Simple URL format validation (avoid HEAD requests that get blocked)
+      if (business.url.startsWith('http://') || business.url.startsWith('https://')) {
         business.url_valid = true;
         validCount++;
-      } catch (error) {
+      } else {
         business.url_valid = false;
-        business.url_error = error.message;
+        business.url_error = 'Invalid URL format';
         invalidCount++;
       }
-
-      // Rate limiting
-      await this.sleep(500);
     }
 
     console.log(`  ✓ Valid URLs: ${validCount}`);
