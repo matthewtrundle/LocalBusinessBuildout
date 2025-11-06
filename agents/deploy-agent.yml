@@ -1,0 +1,134 @@
+name: DeployAgent
+version: 1.0.0
+description: Deploys redesigned pages to Vercel showcase platform
+
+objectives:
+  - Copy redesigned pages to Vercel deployment directory
+  - Generate index page with all business listings
+  - Commit changes to git repository
+  - Trigger Vercel deployment
+  - Return live URLs for each business
+
+input:
+  redesigns_dir: "redesigns/"
+  businesses_data: "data/businesses.json"
+
+output:
+  deployment_dir: "vercel_deploy/businesses/"
+  index_page: "vercel_deploy/index.html"
+  deployment_log: "data/deployment_log.json"
+
+deployment_structure:
+  vercel_deploy/
+    - index.html (master showcase page)
+    - businesses/
+      - jos-coffee/
+        - index.html
+        - styles.css
+        - compare.png
+      - la-barbecue/
+      - ...
+    - assets/
+      - shared.css (global styles)
+      - logo.svg (Domain Labs logo)
+    - vercel.json (configuration)
+
+index_page_template:
+  title: "ATX Revival: Modern Web Designs for Austin Businesses"
+  description: "Showcasing modern, AI-generated homepage redesigns for local Austin businesses"
+
+  sections:
+    hero:
+      headline: "Austin's Small Businesses, Reimagined"
+      subheadline: "Exploring what's possible with modern web design"
+      cta: "Request Your Redesign"
+
+    business_grid:
+      - Display all redesigned businesses
+      - Card layout with:
+        - Business name
+        - Industry
+        - Before/after comparison thumbnail
+        - "View Redesign" button → /{slug}/
+        - Lighthouse scores badge
+
+    about:
+      - Explain the project
+      - "These are concept redesigns created to demonstrate modern web standards"
+      - Not affiliated with the businesses shown
+
+    cta_section:
+      headline: "Want a Redesign for Your Business?"
+      form_fields:
+        - Business Name
+        - Website URL
+        - Email
+        - Phone (optional)
+        - Message (optional)
+      submit_button: "Get My Free Mockup"
+      action: Submit to lead capture (webhook or email)
+
+vercel_configuration:
+  file: "vercel_deploy/vercel.json"
+  config:
+    version: 2
+    builds:
+      - src: "**/*.html"
+        use: "@vercel/static"
+    routes:
+      - src: "/(.*)"
+        dest: "/$1"
+    headers:
+      - source: "/(.*)"
+        headers:
+          - key: "X-Robots-Tag"
+            value: "index, follow"
+
+deployment_process:
+  steps:
+    - Copy redesigns to businesses/ directory
+    - Generate index.html with business grid
+    - Copy shared assets
+    - Create vercel.json if not exists
+    - Git add all changes
+    - Git commit with message: "Deploy: Add {count} redesigned businesses"
+    - Git push to main/deploy branch
+    - Trigger Vercel deployment (via CLI or webhook)
+    - Wait for deployment success
+    - Generate URL list
+
+url_generation:
+  base_url: "https://austin-sites.domainlabs.ai"
+  business_url: "{base_url}/businesses/{slug}"
+  index_url: "{base_url}/"
+
+post_deployment:
+  - Update businesses.json with "redesign_url" field
+  - Save deployment timestamp
+  - Log deployment status (success/failure)
+  - Generate QR codes for each business page (optional)
+
+lead_capture_integration:
+  form_endpoint: "https://api.domainlabs.ai/leads/capture"
+  webhook: "https://hooks.slack.com/... (optional Slack notification)"
+  email_notification: "leads@domainlabs.ai"
+
+quality_checks:
+  - All HTML files copied successfully
+  - No broken internal links
+  - Index page renders correctly
+  - Vercel build succeeds
+  - All URLs return 200 status
+
+error_handling:
+  - Log deployment errors to deployment_log.json
+  - Retry failed deployments once
+  - Send alert if deployment fails
+  - Rollback option (git revert)
+
+success_criteria:
+  - 100% of redesigns successfully deployed
+  - Index page loads in <2 seconds
+  - All business pages accessible via clean URLs
+  - Lead capture form functional
+  - Analytics tracking active (optional)

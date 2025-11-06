@@ -1,0 +1,212 @@
+name: OutreachAgent
+version: 1.0.0
+description: Generates personalized outreach messages for business owners
+
+objectives:
+  - Create personalized email templates for each business
+  - Generate subject lines with high open rates
+  - Include unique redesign URL for each business
+  - Track outreach status and responses
+  - Maintain professional, non-spammy tone
+
+input:
+  businesses_data: "data/businesses.json"
+  redesign_urls: "data/deployment_log.json"
+
+output:
+  outreach_queue: "data/outreach.json"
+  email_templates: "data/outreach_templates/"
+
+outreach_strategy:
+  channels:
+    - Email (primary)
+    - LinkedIn DM (secondary)
+    - Contact form on website (tertiary)
+
+  timing:
+    - Send in batches of 50 per day
+    - Best send times: Tuesday-Thursday, 10 AM - 2 PM CST
+    - Follow-up after 7 days if no response
+    - Max 2 follow-ups per business
+
+  tone:
+    - Friendly but professional
+    - Value-first (show, don't sell)
+    - Local connection (Austin pride)
+    - Transparent about the concept redesign
+    - Low-pressure
+
+email_template_v1:
+  subject_lines:
+    - "Quick question about {business_name}'s website"
+    - "Created something for {business_name} 🎨"
+    - "{business_name} — thought you'd want to see this"
+    - "Your Austin business, reimagined"
+    - "Free redesign concept for {business_name}"
+
+  body: |
+    Hi {first_name},
+
+    I'm reaching out from Domain Labs, an Austin-based web studio.
+
+    We're on a mission to help local businesses compete online with modern,
+    mobile-friendly websites that actually convert visitors into customers.
+
+    To showcase what's possible, we created a free redesign concept of
+    {business_name}'s homepage using today's web standards:
+
+    👉 {redesign_url}
+
+    It's fully live — you can view it on any device. No strings attached,
+    just wanted to show you what's possible with a modern, conversion-focused design.
+
+    If you like what you see and want to make it real (custom domain,
+    optimized for SEO, lightning-fast hosting), we'd love to chat.
+
+    Otherwise, feel free to keep the concept as inspiration!
+
+    Best,
+    {sender_name}
+    Domain Labs
+    Austin, TX
+
+    P.S. — We're doing this for 300 Austin businesses. You can see the full
+    showcase at {showcase_url}
+
+  footer: |
+    ---
+    Domain Labs | Modern Web Design for Austin Businesses
+    Reply STOP to unsubscribe | Privacy Policy: {privacy_url}
+
+email_template_v2_followup:
+  subject: "Re: {business_name} redesign concept"
+
+  body: |
+    Hi {first_name},
+
+    Just wanted to follow up in case you missed my previous email.
+
+    We created a modern homepage redesign for {business_name}:
+    {redesign_url}
+
+    Would love to hear your thoughts! If you're interested in bringing it
+    to life (or want any changes), just reply to this email.
+
+    Thanks,
+    {sender_name}
+
+personalization_fields:
+  - first_name: Extract from contact name or use "there"
+  - business_name: From businesses.json
+  - industry: Used for context (e.g., "I love local coffee shops")
+  - redesign_url: Unique URL for their page
+  - showcase_url: Main index page
+  - sender_name: "Alex" or "Jordan" (rotating)
+  - signature: Include phone number and email
+
+ai_personalization_prompt: |
+  Given this business information:
+  - Name: {business_name}
+  - Industry: {industry}
+  - Location: {address}
+
+  Generate a personalized opening line that:
+  1. Shows genuine interest in their business
+  2. References their industry or location specifically
+  3. Feels authentic, not templated
+  4. Is 1-2 sentences max
+
+  Examples:
+  - "I've been to your location on South Congress — love the vibe!"
+  - "As someone who's tried every taco spot in Austin, I had to include y'all in this project."
+  - "Your shop on 6th Street caught my eye during this project."
+
+outreach_data_structure:
+  - business_id: unique identifier
+  - business_name: string
+  - contact_email: string
+  - redesign_url: string
+  - email_subject: string
+  - email_body: string (personalized)
+  - status: "pending" | "sent" | "bounced" | "opened" | "clicked" | "replied"
+  - sent_at: timestamp
+  - opened_at: timestamp (if tracked)
+  - clicked_at: timestamp (if tracked)
+  - replied_at: timestamp (if tracked)
+  - reply_content: string (if applicable)
+  - follow_up_count: number (0-2)
+  - next_follow_up_date: timestamp
+
+sending_configuration:
+  provider: "SendGrid" | "AWS SES" | "Resend"
+  from_email: "hello@domainlabs.ai"
+  from_name: "Domain Labs - Austin Web Studio"
+  reply_to: "hello@domainlabs.ai"
+
+  tracking:
+    - Open tracking: Yes (pixel)
+    - Click tracking: Yes (redirect)
+    - Unsubscribe link: Required
+    - List-Unsubscribe header: Required
+
+  rate_limiting:
+    - Max 50 emails per day
+    - Wait 5 seconds between sends
+    - Stop if bounce rate >5%
+
+compliance:
+  - CAN-SPAM compliant
+  - Include physical address
+  - Honor unsubscribe requests within 24 hours
+  - No misleading subject lines
+  - Clear identification as marketing email
+
+  gdpr_considerations:
+    - Legitimate interest basis (business contact info publicly available)
+    - Provide easy opt-out
+    - Don't share data with third parties
+    - Delete data on request
+
+quality_checks:
+  - Email addresses validated (regex + DNS check)
+  - Personalization fields populated (no {{missing}} tags)
+  - Links tested (200 status)
+  - Spam score <5 (mail-tester.com)
+  - Preview text optimized
+  - Mobile-friendly HTML formatting
+
+response_handling:
+  interested:
+    - Tag as "hot_lead"
+    - Send to CRM or notion database
+    - Schedule intro call
+    - Prepare custom proposal
+
+  not_interested:
+    - Thank for their time
+    - Mark as "not_interested"
+    - Remove from follow-up queue
+
+  bounce:
+    - Try alternative email if available
+    - Try LinkedIn outreach
+    - Mark as "unreachable"
+
+  no_response:
+    - Follow up after 7 days
+    - Max 2 follow-ups total
+    - Then mark as "no_response" and archive
+
+success_metrics:
+  - Open rate target: >30%
+  - Click rate target: >10%
+  - Reply rate target: >5%
+  - Interested lead rate: >2% (6+ leads from 300 contacts)
+  - Bounce rate: <3%
+
+success_criteria:
+  - 300 personalized emails generated
+  - <5% personalization errors
+  - All emails pass spam filters
+  - Sending queue operational
+  - Response tracking functional

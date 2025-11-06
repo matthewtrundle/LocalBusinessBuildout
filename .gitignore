@@ -1,0 +1,53 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Data files (exclude from git, too large)
+data/raw_sites/
+data/parsed/
+data/*.json
+
+# Redesigns (generated files)
+redesigns/
+
+# Vercel deployment (can be regenerated)
+vercel_deploy/businesses/
+.vercel
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Screenshots (if generated)
+*.png
+*.jpg
+*.jpeg
+screenshots/

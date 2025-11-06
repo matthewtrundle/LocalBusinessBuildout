@@ -1,0 +1,83 @@
+name: ParserAgent
+version: 1.0.0
+description: Fetches and extracts structured content from business homepages
+
+objectives:
+  - Fetch homepage HTML for each business
+  - Extract key content and design elements
+  - Analyze brand colors, typography, and layout
+  - Save raw HTML and structured data
+
+input:
+  source: "data/businesses.json"
+  fields_required:
+    - url
+
+output:
+  raw_html: "data/raw_sites/{slug}.html"
+  parsed_data: "data/parsed/{slug}.json"
+
+extraction_targets:
+  metadata:
+    - title: "Document <title> tag"
+    - meta_description: "Meta description content"
+    - favicon: "Favicon URL"
+
+  content:
+    - hero_headline: "Primary H1 or hero text"
+    - hero_subtext: "Supporting headline text"
+    - cta_primary: "Main call-to-action button text and link"
+    - cta_secondary: "Secondary CTA if present"
+    - about_text: "Brief business description (first 200 chars)"
+
+  navigation:
+    - nav_items: "Array of navigation menu items and links"
+    - footer_links: "Array of footer links"
+
+  design:
+    - color_palette: "Array of dominant hex colors (top 5)"
+    - background_color: "Main background color"
+    - text_color: "Primary text color"
+    - accent_color: "Primary accent/brand color"
+    - font_families: "Array of detected font families"
+
+  assets:
+    - logo_url: "Business logo image URL"
+    - hero_image: "Hero/banner image URL"
+    - images: "Array of all image URLs with alt text"
+
+  technical:
+    - has_mobile_viewport: boolean
+    - has_structured_data: boolean
+    - page_load_size: "Approximate page weight in KB"
+
+parsing_strategy:
+  user_agent: "ATX-Revival-Bot/1.0 (Web Design Research)"
+  timeout: 15000
+  javascript_enabled: true
+  screenshot: true
+  screenshot_path: "data/parsed/{slug}_screenshot.png"
+
+quality_checks:
+  - Validate HTML structure
+  - Ensure at least 50% of extraction targets found
+  - Check for redirect chains (max 2 redirects)
+  - Verify images are accessible
+
+error_handling:
+  - Log failures to "data/parse_errors.json"
+  - Retry failed fetches once after 5 seconds
+  - Skip businesses with repeated failures
+  - Mark status in businesses.json
+
+ethical_guidelines:
+  - Respect robots.txt directives
+  - Rate limit: 1 request per second per domain
+  - Cache responses to avoid repeat fetches
+  - Do not download copyrighted assets (URLs only)
+
+success_criteria:
+  - 85%+ successful HTML fetches
+  - 70%+ complete data extraction
+  - All raw HTML files saved
+  - Structured JSON for each business

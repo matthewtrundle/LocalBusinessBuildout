@@ -1,0 +1,165 @@
+name: RedesignAgent
+version: 1.0.0
+description: AI-powered homepage redesign generator using modern UX/UI principles
+
+objectives:
+  - Generate beautiful, modern homepage redesigns
+  - Apply Domain Labs Design Framework
+  - Create accessible, mobile-first layouts
+  - Produce production-ready HTML/CSS code
+
+input:
+  parsed_data: "data/parsed/{slug}.json"
+  original_screenshot: "data/parsed/{slug}_screenshot.png"
+
+output:
+  html_file: "redesigns/{slug}/index.html"
+  css_file: "redesigns/{slug}/styles.css"
+  comparison_image: "redesigns/{slug}/compare.png"
+  metadata: "redesigns/{slug}/metadata.json"
+
+design_framework:
+  name: "Domain Labs Modern Web Framework"
+
+  principles:
+    - Mobile-first responsive design
+    - Clear visual hierarchy
+    - High contrast ratios (WCAG 2.1 AA compliant)
+    - Breathing room (generous whitespace)
+    - Semantic HTML5 structure
+    - Fast load times (<100KB initial payload)
+
+  layout_structure:
+    header:
+      - Business logo (placeholder if needed)
+      - Navigation menu (mobile hamburger, desktop inline)
+      - CTA button in header
+
+    hero_section:
+      - Full-width hero with background image or gradient
+      - Compelling headline (H1)
+      - Supporting subheadline
+      - Primary CTA button (high contrast)
+      - Trust signal (optional: "Proudly serving Austin since XXXX")
+
+    value_proposition:
+      - 3-column feature grid (mobile stacks)
+      - Icons or emoji for each feature
+      - Brief descriptions
+
+    social_proof:
+      - Testimonials or review score
+      - "As seen on" or awards (if applicable)
+
+    cta_section:
+      - Strong conversion-focused section
+      - Clear action ("Book Now", "Get Quote", "Visit Us")
+      - Contact info or form
+
+    footer:
+      - Contact details
+      - Business hours
+      - Social media links
+      - Address with map link
+      - Copyright notice
+
+  styling_guidelines:
+    typography:
+      - Headings: System font stack or Google Fonts (Inter, Poppins, Playfair)
+      - Body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
+      - H1: 2.5rem (mobile), 4rem (desktop)
+      - Body: 1rem, line-height 1.6
+
+    colors:
+      - Use brand colors if identified, otherwise:
+      - Primary: #2563eb (professional blue)
+      - Accent: #7c3aed (vibrant purple)
+      - Neutral: #1f2937 (dark gray)
+      - Background: #ffffff or #f9fafb
+      - Ensure 4.5:1 contrast ratio minimum
+
+    spacing:
+      - Base unit: 0.25rem (4px)
+      - Section padding: 4rem (mobile), 6rem (desktop)
+      - Component spacing: 1.5rem to 2rem
+
+    components:
+      - Buttons: Rounded (0.5rem), solid fills, hover states
+      - Cards: Subtle shadow, rounded corners
+      - Images: Lazy-load, WebP format preferred, alt text required
+
+  accessibility_requirements:
+    - Semantic HTML tags (<header>, <nav>, <main>, <section>, <footer>)
+    - ARIA labels where needed
+    - Skip to content link
+    - Keyboard navigable
+    - Alt text for all images
+    - Proper heading hierarchy
+    - Focus states for interactive elements
+
+  technical_specifications:
+    - TailwindCSS utility classes OR inline styles
+    - No external dependencies beyond fonts
+    - Responsive breakpoints: 640px, 768px, 1024px, 1280px
+    - Viewport meta tag
+    - Open Graph tags for social sharing
+    - Structured data (JSON-LD) for LocalBusiness
+
+ai_generation_prompt: |
+  You are an expert web designer specializing in local business websites.
+
+  Given the following business information:
+  - Business Name: {name}
+  - Industry: {industry}
+  - Current Website Data: {parsed_data}
+
+  Generate a complete, modern homepage redesign following these requirements:
+
+  1. Create semantic HTML5 structure
+  2. Use TailwindCSS classes for styling (include CDN link)
+  3. Implement mobile-first responsive design
+  4. Include all sections: header, hero, features, social proof, CTA, footer
+  5. Use placeholder images from Unsplash (via unsplash.com/photos/random)
+  6. Replace logo with "{{business_name}}" text logo
+  7. Preserve business contact info, hours, and location
+  8. Write compelling, conversion-focused copy
+  9. Ensure WCAG 2.1 AA accessibility compliance
+  10. Add meta tags, Open Graph, and JSON-LD structured data
+
+  Output valid, production-ready HTML that can be deployed immediately.
+
+  Add a subtle footer notice: "Concept redesign by Domain Labs • Not affiliated with {business_name}"
+
+quality_checks:
+  - Valid HTML5 (no syntax errors)
+  - Mobile responsive (test at 375px, 768px, 1024px)
+  - Lighthouse score targets:
+    - Performance: >80
+    - Accessibility: >90
+    - Best Practices: >90
+    - SEO: >90
+  - All images have alt text
+  - Color contrast ratio >4.5:1
+  - CTA buttons clearly visible
+
+comparison_generation:
+  - Screenshot original site (from parsed data)
+  - Screenshot redesigned site
+  - Create side-by-side comparison image
+  - Add labels: "Before" and "After"
+  - Include Domain Labs watermark
+
+metadata_output:
+  - generation_timestamp
+  - design_choices_rationale
+  - color_palette_used
+  - fonts_used
+  - lighthouse_scores (if tested)
+  - estimated_improvement_metrics
+
+success_criteria:
+  - 100% valid HTML/CSS
+  - Mobile-friendly (Google test)
+  - Loads in <3 seconds on 3G
+  - Visually appealing (subjective but consistent with framework)
+  - Clear improvement over original design

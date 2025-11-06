@@ -1,0 +1,37 @@
+{
+  "name": "atx-revival",
+  "version": "1.0.0",
+  "description": "Austin Business Web Redesign Engine - Automated AI-powered web redesign pipeline",
+  "main": "scripts/orchestrator.js",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/orchestrator.js",
+    "discover": "node scripts/agents/discovery-agent.js",
+    "parse": "node scripts/agents/parser-agent.js",
+    "redesign": "node scripts/agents/redesign-agent.js",
+    "deploy": "node scripts/agents/deploy-agent.js",
+    "outreach": "node scripts/agents/outreach-agent.js",
+    "test": "node scripts/orchestrator.js --limit 5"
+  },
+  "keywords": [
+    "web-redesign",
+    "ai",
+    "automation",
+    "austin",
+    "local-business"
+  ],
+  "author": "Domain Labs",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "node-html-parser": "^6.1.11",
+    "puppeteer": "^21.6.1",
+    "csv-parse": "^5.5.3",
+    "csv-stringify": "^6.4.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1"
+  }
+}

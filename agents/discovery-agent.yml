@@ -1,0 +1,70 @@
+name: DiscoveryAgent
+version: 1.0.0
+description: Discovers and collects data on small businesses in Austin, Texas
+
+objectives:
+  - Find 300 small businesses in Austin, TX with <500 employees
+  - Verify each business has an active website
+  - Collect contact information and business details
+  - Filter by industry verticals (restaurants, salons, retail, services)
+
+input:
+  location: "Austin, Texas"
+  max_businesses: 300
+  max_employees: 500
+  required_fields:
+    - name
+    - url
+    - address
+    - industry
+    - size_estimate
+
+output:
+  format: json
+  file_path: "data/businesses.json"
+  schema:
+    - name: string
+    - url: string (validated URL)
+    - address: string
+    - industry: string
+    - size_estimate: string
+    - contact_email: string (optional)
+    - phone: string (optional)
+    - latitude: number (optional)
+    - longitude: number (optional)
+
+data_sources:
+  - Google Maps API
+  - Yelp Fusion API
+  - Manual curated lists
+  - Austin Chamber of Commerce directory
+
+filters:
+  location_radius: "20 miles from Austin city center"
+  business_types:
+    - restaurant
+    - cafe
+    - salon
+    - barbershop
+    - boutique
+    - retail
+    - local_services
+    - fitness
+    - auto_repair
+    - home_services
+
+quality_checks:
+  - url_validation: Must return HTTP 200-399
+  - duplicate_detection: Check for duplicate URLs or names
+  - contact_info: At least one contact method required
+
+ethical_guidelines:
+  - Respect robots.txt
+  - Rate limit API calls (max 10 requests/second)
+  - Do not scrape personal data beyond business contact info
+  - Mark data source for transparency
+
+success_criteria:
+  - 90% of businesses have valid, accessible URLs
+  - At least 250 businesses collected
+  - Data completeness: 100% for required fields, 60%+ for optional fields
