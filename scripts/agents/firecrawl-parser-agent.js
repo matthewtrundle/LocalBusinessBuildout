@@ -22,9 +22,9 @@ class FirecrawlParserAgent {
     this.parseErrors = [];
 
     // Initialize Firecrawl
-    const apiKey = process.env.FIRECRAWL_API_KEY;
+    const apiKey = process.env.FIRECRAWL || process.env.FIRECRAWL_API_KEY;
     if (!apiKey) {
-      throw new Error('FIRECRAWL_API_KEY not found in environment variables');
+      throw new Error('FIRECRAWL or FIRECRAWL_API_KEY not found in environment variables');
     }
 
     this.firecrawl = new FirecrawlApp({ apiKey });

@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node scripts/orchestrator.js",
     "discover": "node scripts/agents/discovery-agent.js",
-    "parse": "node scripts/agents/parser-agent.js",
+    "parse": "node scripts/agents/firecrawl-parser-agent.js",
+    "parse-old": "node scripts/agents/parser-agent.js",
     "redesign": "node scripts/agents/redesign-agent.js",
     "deploy": "node scripts/agents/deploy-agent.js",
     "outreach": "node scripts/agents/outreach-agent.js",

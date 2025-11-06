@@ -6,7 +6,7 @@
  */
 
 import DiscoveryAgent from './agents/discovery-agent.js';
-import ParserAgent from './agents/parser-agent.js';
+import FirecrawlParserAgent from './agents/firecrawl-parser-agent.js';
 import RedesignAgent from './agents/redesign-agent.js';
 import DeployAgent from './agents/deploy-agent.js';
 import OutreachAgent from './agents/outreach-agent.js';
@@ -40,10 +40,10 @@ class Orchestrator {
         });
       }
 
-      // Phase 2: Parsing
+      // Phase 2: Parsing (with Firecrawl)
       if (this.shouldRunPhase('parse')) {
-        await this.runPhase('Phase 2: Parsing', async () => {
-          const agent = new ParserAgent();
+        await this.runPhase('Phase 2: Parsing (Firecrawl)', async () => {
+          const agent = new FirecrawlParserAgent();
           await agent.run(this.options.limit);
         });
       }
