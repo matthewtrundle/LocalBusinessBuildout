@@ -145,11 +145,7 @@ export default function TechStartupPage() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="relative group"
               >
-                <div className="absolute inset-0 bg-gradient-to-br opacity-20 group-hover:opacity-40 rounded-2xl blur-xl transition-opacity duration-300"
-                     style={{
-                       backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-stops))`,
-                     }}
-                     className={`bg-gradient-to-br ${stat.color}`}
+                <div className={`absolute inset-0 bg-gradient-to-br ${stat.color} opacity-20 group-hover:opacity-40 rounded-2xl blur-xl transition-opacity duration-300`}
                 ></div>
                 <div className="relative backdrop-blur-xl bg-white/5 border border-white/10 p-8 rounded-2xl">
                   <div className={`text-4xl font-black mb-2 bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>

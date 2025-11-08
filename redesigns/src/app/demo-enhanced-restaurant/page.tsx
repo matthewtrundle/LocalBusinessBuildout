@@ -2,22 +2,6 @@
 
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { useRef, useState } from 'react';
-import type { Metadata } from 'next';
-
-// SEO Metadata
-export const metadata: Metadata = {
-  title: 'Enhanced Restaurant Demo | Modern Fine Dining in Austin',
-  description: 'Experience culinary excellence with our modern take on classic cuisine. Farm-to-table ingredients, craft cocktails, and exceptional service in the heart of Austin, TX.',
-  keywords: ['restaurant', 'Austin', 'fine dining', 'farm-to-table', 'craft cocktails'],
-  openGraph: {
-    title: 'Enhanced Restaurant Demo',
-    description: 'Modern Fine Dining Experience in Austin',
-    url: 'https://atx-revival.vercel.app/demo-enhanced-restaurant',
-    siteName: 'ATX Revival',
-    locale: 'en_US',
-    type: 'website',
-  },
-};
 
 export default function EnhancedRestaurantPage() {
   const containerRef = useRef(null);
