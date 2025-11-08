@@ -30,6 +30,7 @@ class AustinCrawler {
     this.primeTargets = []; // Businesses scoring 1-5/10
     this.goodSkips = [];     // Businesses scoring 8-10/10
     this.potentials = [];    // Businesses scoring 6-7/10
+    this.targetsForImages = []; // All businesses ≤7/10 that need images downloaded
 
     // Initialize FireCrawl
     const apiKey = process.env.FIRECRAWL_API_KEY;
@@ -78,11 +79,15 @@ class AustinCrawler {
           // Categorize by score
           if (result.quality_score.total <= 5) {
             this.primeTargets.push(result);
-            console.log(`  🎯 \x1b[31mPRIME TARGET!\x1b[0m Added to redesign list`);
+            this.targetsForImages.push(result);
+            console.log(`  🎯 \x1b[31mPRIME TARGET!\x1b[0m Added to redesign list + images`);
           } else if (result.quality_score.total >= 8) {
             this.goodSkips.push(result);
           } else {
+            // Scores 6-7
             this.potentials.push(result);
+            this.targetsForImages.push(result);
+            console.log(`  📸 Added to image download list (score ≤7)`);
           }
         } catch (error) {
           this.failureCount++;
@@ -108,13 +113,14 @@ class AustinCrawler {
         }
       }
 
-      // Download images for prime targets only
-      if (options.downloadImages !== false && this.primeTargets.length > 0) {
+      // Download images for sites scoring ≤7/10 (for redesign use)
+      if (options.downloadImages !== false && this.targetsForImages.length > 0) {
         console.log('\n\n═══════════════════════════════════════════════════════════');
-        console.log('  🖼️  DOWNLOADING IMAGES FOR PRIME TARGETS');
+        console.log('  🖼️  DOWNLOADING IMAGES FOR TARGETS (Score ≤7/10)');
+        console.log(`  📸 ${this.targetsForImages.length} sites need images`);
         console.log('═══════════════════════════════════════════════════════════');
 
-        await this.imageDownloader.downloadAllBusinessImages(this.primeTargets);
+        await this.imageDownloader.downloadAllBusinessImages(this.targetsForImages);
       }
 
       // Save final results
@@ -138,7 +144,8 @@ class AustinCrawler {
    * Load Austin businesses
    */
   async loadBusinesses() {
-    // Try batch5 first, then batch4, batch3, batch2, batch1, then fallback
+    // Try batch6 first, then batch5, batch4, batch3, batch2, batch1, then fallback
+    const batch6Path = path.join(__dirname, '..', 'data', 'austin-real-businesses-batch6.json');
     const batch5Path = path.join(__dirname, '..', 'data', 'austin-real-businesses-batch5.json');
     const batch4Path = path.join(__dirname, '..', 'data', 'austin-real-businesses-batch4.json');
     const batch3Path = path.join(__dirname, '..', 'data', 'austin-real-businesses-batch3.json');
@@ -147,34 +154,40 @@ class AustinCrawler {
     const austinPath = path.join(__dirname, '..', 'data', 'austin-businesses-1000.json');
 
     try {
-      const data = await fs.readFile(batch5Path, 'utf-8');
+      const data = await fs.readFile(batch6Path, 'utf-8');
       this.businesses = JSON.parse(data);
-      console.log(`📂 Loaded ${this.businesses.length} Cedar Park businesses (batch5 - Fitness, Cleaning, Photography, Retail)`);
+      console.log(`📂 Loaded ${this.businesses.length} Cedar Park businesses (batch6 - Coffee, Breakfast, Salons, Auto Repair)`);
     } catch (error) {
       try {
-        const data = await fs.readFile(batch4Path, 'utf-8');
+        const data = await fs.readFile(batch5Path, 'utf-8');
         this.businesses = JSON.parse(data);
-        console.log(`📂 Loaded ${this.businesses.length} REAL Cedar Park businesses (batch4)`);
+        console.log(`📂 Loaded ${this.businesses.length} Cedar Park businesses (batch5 - Fitness, Cleaning, Photography, Retail)`);
       } catch (error2) {
         try {
-          const data = await fs.readFile(batch3Path, 'utf-8');
+          const data = await fs.readFile(batch4Path, 'utf-8');
           this.businesses = JSON.parse(data);
-          console.log(`📂 Loaded ${this.businesses.length} REAL Austin businesses (batch3 - Plumbers)`);
+          console.log(`📂 Loaded ${this.businesses.length} REAL Cedar Park businesses (batch4)`);
         } catch (error3) {
           try {
-            const data = await fs.readFile(batch2Path, 'utf-8');
+            const data = await fs.readFile(batch3Path, 'utf-8');
             this.businesses = JSON.parse(data);
-            console.log(`📂 Loaded ${this.businesses.length} REAL Austin-area businesses (batch2 - HVAC, Salons, Landscaping, Pet Services)`);
+            console.log(`📂 Loaded ${this.businesses.length} REAL Austin businesses (batch3 - Plumbers)`);
           } catch (error4) {
             try {
-              const data = await fs.readFile(batch1Path, 'utf-8');
+              const data = await fs.readFile(batch2Path, 'utf-8');
               this.businesses = JSON.parse(data);
-              console.log(`📂 Loaded ${this.businesses.length} REAL Austin-area businesses (batch1)`);
+              console.log(`📂 Loaded ${this.businesses.length} REAL Austin-area businesses (batch2 - HVAC, Salons, Landscaping, Pet Services)`);
             } catch (error5) {
-              console.log(`⚠️  No batch files found, loading generated list`);
-              const data = await fs.readFile(austinPath, 'utf-8');
-              this.businesses = JSON.parse(data);
-              console.log(`📂 Loaded ${this.businesses.length} Austin-area businesses`);
+              try {
+                const data = await fs.readFile(batch1Path, 'utf-8');
+                this.businesses = JSON.parse(data);
+                console.log(`📂 Loaded ${this.businesses.length} REAL Austin-area businesses (batch1)`);
+              } catch (error6) {
+                console.log(`⚠️  No batch files found, loading generated list`);
+                const data = await fs.readFile(austinPath, 'utf-8');
+                this.businesses = JSON.parse(data);
+                console.log(`📂 Loaded ${this.businesses.length} Austin-area businesses`);
+              }
             }
           }
         }
