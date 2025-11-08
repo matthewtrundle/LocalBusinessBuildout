@@ -14,9 +14,6 @@ data/raw_sites/
 data/parsed/
 data/*.json
 
-# Redesigns (generated files)
-redesigns/
-
 # Vercel deployment (can be regenerated)
 vercel_deploy/businesses/
 .vercel
