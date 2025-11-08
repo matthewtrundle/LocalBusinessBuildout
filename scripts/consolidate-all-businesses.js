@@ -19,6 +19,7 @@ class BusinessConsolidator {
       real_businesses: 0,
       chamber_scrapes: 0,
       yellowpages: 0,
+      free_sources: 0,
       csv_imports: 0,
     };
   }
@@ -29,6 +30,7 @@ class BusinessConsolidator {
     // Load all sources
     await this.loadManualDatabase();
     await this.loadRealBusinesses();
+    await this.loadFreeSourcesData();
     await this.loadChamberData();
     await this.loadYellowPagesData();
     await this.loadCSVImports();
@@ -63,6 +65,23 @@ class BusinessConsolidator {
     });
     console.log(`   ✓ Loaded ${realAustinCedarParkBusinesses.length} businesses\n`);
     this.sources.real_businesses = realAustinCedarParkBusinesses.length;
+  }
+
+  async loadFreeSourcesData() {
+    try {
+      const freePath = '/home/user/LocalBusinessBuildout/data/free-sources-businesses.json';
+      const data = await fs.readFile(freePath, 'utf-8');
+      const businesses = JSON.parse(data);
+      console.log('📚 Loading FREE sources data (OpenTable, etc.)...');
+      businesses.forEach(b => {
+        b.source = 'free_sources';
+        this.addBusiness(b);
+      });
+      console.log(`   ✓ Loaded ${businesses.length} businesses\n`);
+      this.sources.free_sources = businesses.length;
+    } catch (error) {
+      console.log('   ℹ️  No free sources data found\n');
+    }
   }
 
   async loadChamberData() {

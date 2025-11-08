@@ -1,7 +1,7 @@
 Business Name,Address,City,Zip,Phone,Website,Category,Industry,Source,Slug
 Franklin Barbecue,"900 E 11th St, Austin, TX 78702",Austin,78702,(512) 653-1187,,BBQ,restaurant,manual_database,franklin-barbecue
 Torchy's Tacos,"Multiple Locations, Austin, TX",Austin,78704,(512) 366-0537,,Mexican Food,restaurant,manual_database,torchy-s-tacos
-Uchi,"801 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 916-4808,,Sushi,restaurant,manual_database,uchi
+Uchi,"801 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 916-4808,http://www.opentable.com/uchi?scpref=110,Sushi,restaurant,manual_database; free_sources,uchi
 Matt's El Rancho,"2613 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 462-9333,,Mexican Food,restaurant,manual_database,matt-s-el-rancho
 Hopdoddy Burger Bar,"Multiple Locations, Austin, TX",Austin,78701,(512) 243-7505,,Burgers,restaurant,manual_database,hopdoddy-burger-bar
 Kerbey Lane Cafe,"Multiple Locations, Austin, TX",Austin,78704,(512) 451-1436,,American Diner,restaurant,manual_database,kerbey-lane-cafe
@@ -80,3 +80,105 @@ Pinthouse,"Austin, TX",Austin,,,,,brewery,real_businesses,pinthouse
 Jester King Brewery,"Austin, TX",Austin,,,,,brewery,real_businesses,jester-king-brewery
 Oddwood Brewing,"Airport and Manor Rd, East Austin, TX",Austin,,,,,brewery,real_businesses,oddwood-brewing
 Tony C's Beer Garden,"Austin, TX",Austin,,,,,brewery,real_businesses,tony-c-s-beer-garden
+1886 Cafe & Bakery - Driskill Hotel,,Austin,,(512) 391-7066,http://www.opentable.com/1886-cafe-and-bakery-driskill-hotel?scpref=110,Restaurant,Food & Beverage,free_sources,1886-cafe-bakery-driskill-hotel
+ALC Steaks (Austin Land & Cattle),,Austin,,(512) 472-1813,http://www.opentable.com/alc-steaks-austin-land-and-cattle?scpref=110,Restaurant,Food & Beverage,free_sources,alc-steaks-austin-land-cattle
+Andiamo Ristorante,,Austin,,(512) 719-3377,http://www.opentable.com/andiamo-ristorante?scpref=110,Restaurant,Food & Beverage,free_sources,andiamo-ristorante
+ASTI Trattoria,,Austin,,(512) 451-1218,http://www.opentable.com/asti-trattoria?scpref=110,Restaurant,Food & Beverage,free_sources,asti-trattoria
+August E's,,Austin,,(830) 997-1585,http://www.opentable.com/august-es?scpref=110,Restaurant,Food & Beverage,free_sources,august-e-s
+Bar Mirabeau,,Austin,,(512) 436-9633,http://www.opentable.com/bar-mirabeau?scpref=110,Restaurant,Food & Beverage,free_sources,bar-mirabeau
+Bess Bistro,,Austin,,(512) 477-2377,http://www.opentable.com/bess?scpref=110,Restaurant,Food & Beverage,free_sources,bess-bistro
+Bob's Steak and Chop House - Austin,,Austin,,(512) 222-2627,http://www.opentable.com/bobs-steak-and-chop-house-austin?scpref=110,Restaurant,Food & Beverage,free_sources,bob-s-steak-and-chop-house-austin
+Botticelli's,,Austin,,(512) 916-1315,http://www.opentable.com/botticellis?scpref=110,Restaurant,Food & Beverage,free_sources,botticelli-s
+Buca di Beppo - Austin,,Austin,,(512) 342-8462,http://www.opentable.com/buca-di-beppo-austin?scpref=110,Restaurant,Food & Beverage,free_sources,buca-di-beppo-austin
+Cabernet Grill Texas Wine Country Restaurant,,Austin,,(830) 990-5734,http://www.opentable.com/cabernet-grill-texas-wine-country-restaurant?scpref=110,Restaurant,Food & Beverage,free_sources,cabernet-grill-texas-wine-country-restaurant
+Cafe Josie,,Austin,,(512) 322-9226,http://www.opentable.com/cafe-josie?scpref=110,Restaurant,Food & Beverage,free_sources,cafe-josie
+Cafe Malta,,Austin,,(512) 853-9584,http://www.opentable.com/cafe-malta?scpref=110,Restaurant,Food & Beverage,free_sources,cafe-malta
+Cantina Laredo - Austin,,Austin,,(512) 542-9670,http://www.opentable.com/cantina-laredo-austin?scpref=110,Restaurant,Food & Beverage,free_sources,cantina-laredo-austin
+Carillon Restaurant,,Austin,,(512) 404-3655,http://www.opentable.com/carillon-restaurant?scpref=110,Restaurant,Food & Beverage,free_sources,carillon-restaurant
+Carmelo's Ristorante Italiano - Austin,,Austin,,(512) 477-7497,http://www.opentable.com/carmelos-ristorante-italiano-austin?scpref=110,Restaurant,Food & Beverage,free_sources,carmelo-s-ristorante-italiano-austin
+Chez Zee,,Austin,,(512) 454-2666,http://www.opentable.com/chez-zee?scpref=110,Restaurant,Food & Beverage,free_sources,chez-zee
+Cipollina,,Austin,,(512) 477-5211,http://www.opentable.com/cipollina?scpref=110,Restaurant,Food & Beverage,free_sources,cipollina
+Clay Pit,,Austin,,(512) 322-5131,http://www.opentable.com/clay-pit?scpref=110,Restaurant,Food & Beverage,free_sources,clay-pit
+Congress,,Austin,,(512) 827-2760,http://www.opentable.com/congress?scpref=110,Restaurant,Food & Beverage,free_sources,congress
+Cool River Cafe - Austin,,Austin,,(512) 835-0010,http://www.opentable.com/cool-river-cafe-austin?scpref=110,Restaurant,Food & Beverage,free_sources,cool-river-cafe-austin
+Cypress Grill,,Austin,,(512) 358-7474,http://www.opentable.com/cypress-grill?scpref=110,Restaurant,Food & Beverage,free_sources,cypress-grill
+Daily Grill - Austin,,Austin,,(512) 836-4200,http://www.opentable.com/daily-grill-austin?scpref=110,Restaurant,Food & Beverage,free_sources,daily-grill-austin
+Driskill Grill - Driskill Hotel,,Austin,,(512) 391-7162,http://www.opentable.com/driskill-grill-driskill-hotel?scpref=110,Restaurant,Food & Beverage,free_sources,driskill-grill-driskill-hotel
+Eddie V's - 5th Street,,Austin,,(512) 472-1860,http://www.opentable.com/eddie-vs-5th-street?scpref=110,Restaurant,Food & Beverage,free_sources,eddie-v-s-5th-street
+Eddie V's - Arboretum,,Austin,,(512) 342-2642,http://www.opentable.com/eddie-vs-arboretum?scpref=110,Restaurant,Food & Beverage,free_sources,eddie-v-s-arboretum
+El Alma Cafe y Cantina,,Austin,,(512) 609-8923,http://www.opentable.com/el-alma-cafe-y-cantina?scpref=110,Restaurant,Food & Beverage,free_sources,el-alma-cafe-y-cantina
+El Chile Cafe y Cantina,,Austin,,(512) 457-9900,http://www.opentable.com/el-chile-cafe-y-cantina?scpref=110,Restaurant,Food & Beverage,free_sources,el-chile-cafe-y-cantina
+El Naranjo,,Austin,,(512) 474-2776,http://www.opentable.com/el-naranjo?scpref=110,Restaurant,Food & Beverage,free_sources,el-naranjo
+eleven plates & wine,,Austin,,(512) 328-0110,http://www.opentable.com/eleven-plates-and-wine?scpref=110,Restaurant,Food & Beverage,free_sources,eleven-plates-wine
+Estancia Churrascaria - Arboretum,,Austin,,(512) 345-5600,http://www.opentable.com/estancia-churrascaria-arboretum?scpref=110,Restaurant,Food & Beverage,free_sources,estancia-churrascaria-arboretum
+finn & porter,,Austin,,(512) 493-4900,http://www.opentable.com/finn-and-porter-austin?scpref=110,Restaurant,Food & Beverage,free_sources,finn-porter
+FINO Restaurant Patio & Bar,,Austin,,(512) 474-2905,http://www.opentable.com/fino-restaurant-patio-and-bar?scpref=110,Restaurant,Food & Beverage,free_sources,fino-restaurant-patio-bar
+Fleming's Prime Steakhouse & Wine Bar - Austin,,Austin,,(512) 457-1500,http://www.opentable.com/flemings-prime-steakhouse-and-wine-bar-austin?scpref=110,Restaurant,Food & Beverage,free_sources,fleming-s-prime-steakhouse-wine-bar-austin
+Fleming's Prime Steakhouse & Wine Bar - Austin The Domain,,Austin,,(512) 835-9463,http://www.opentable.com/flemings-prime-steakhouse-and-wine-bar-austin-the-domain?scpref=110,Restaurant,Food & Beverage,free_sources,fleming-s-prime-steakhouse-wine-bar-austin-the-domain
+Fogo de Chao Brazilian Steakhouse - Austin,,Austin,,(512) 472-0220,http://www.opentable.com/fogo-de-chao-brazilian-steakhouse-austin?scpref=110,Restaurant,Food & Beverage,free_sources,fogo-de-chao-brazilian-steakhouse-austin
+Fore,,Austin,,(512) 263-3673,http://www.opentable.com/fore?scpref=110,Restaurant,Food & Beverage,free_sources,fore
+Gumbo's Steak and Seafood - Bee Cave,,Austin,,(512) 263-2711,http://www.opentable.com/gumbos-steak-and-seafood-bee-cave?scpref=110,Restaurant,Food & Beverage,free_sources,gumbo-s-steak-and-seafood-bee-cave
+Haddingtons,,Austin,,(512) 992-0204,http://www.opentable.com/haddingtons?scpref=110,Restaurant,Food & Beverage,free_sources,haddingtons
+Hemingway Restaurant and Bar,,Austin,,(512) 219-6400,http://www.opentable.com/hemingway-restaurant-and-bar?scpref=110,Restaurant,Food & Beverage,free_sources,hemingway-restaurant-and-bar
+HomeField Grill,,Austin,,(512) 388-4663,http://www.opentable.com/homefield-grill?scpref=110,Restaurant,Food & Beverage,free_sources,homefield-grill
+Hudson's On The Bend,,Austin,,(512) 266-1369,http://www.opentable.com/hudsons-on-the-bend?scpref=110,Restaurant,Food & Beverage,free_sources,hudson-s-on-the-bend
+Hugo's Restaurant and Tequila Bar,,Austin,,(512) 474-4846,http://www.opentable.com/hugos-restaurant-and-tequila-bar?scpref=110,Restaurant,Food & Beverage,free_sources,hugo-s-restaurant-and-tequila-bar
+Hyde Park Bar & Grill - Duval,,Austin,,(512) 458-3168,http://www.opentable.com/hyde-park-bar-and-grill-duval?scpref=110,Restaurant,Food & Beverage,free_sources,hyde-park-bar-grill-duval
+III Forks Austin,,Austin,,(512) 474-1776,http://www.opentable.com/iii-forks-austin?scpref=110,Restaurant,Food & Beverage,free_sources,iii-forks-austin
+Imperia,,Austin,,(512) 472-6770,http://www.opentable.com/imperia?scpref=110,Restaurant,Food & Beverage,free_sources,imperia
+Jasper's - Austin,,Austin,,(512) 834-4111,http://www.opentable.com/jaspers-austin?scpref=110,Restaurant,Food & Beverage,free_sources,jasper-s-austin
+Judges' Hill Restaurant,,Austin,,(512) 495-1857,http://www.opentable.com/judges-hill-restaurant?scpref=110,Restaurant,Food & Beverage,free_sources,judges-hill-restaurant
+Kona Grill - Austin,,Austin,,(512) 835-5900,http://www.opentable.com/kona-grill-austin?scpref=110,Restaurant,Food & Beverage,free_sources,kona-grill-austin
+La Condesa,,Austin,,(512) 499-0300,http://www.opentable.com/la-condesa?scpref=110,Restaurant,Food & Beverage,free_sources,la-condesa
+Lambert's Downtown BBQ,,Austin,,(512) 494-1500,http://www.opentable.com/lamberts-downtown-bbq?scpref=110,Restaurant,Food & Beverage,free_sources,lambert-s-downtown-bbq
+Las Palomas Restaurant-Bar,,Austin,,(512) 327-9889,http://www.opentable.com/las-palomas-restaurant-bar?scpref=110,Restaurant,Food & Beverage,free_sources,las-palomas-restaurant-bar
+Maggiano's - Austin,,Austin,,(512) 501-7870,http://www.opentable.com/maggianos-austin?scpref=110,Restaurant,Food & Beverage,free_sources,maggiano-s-austin
+Main Street Grill,,Austin,,(512) 244-7525,http://www.opentable.com/main-street-grill?scpref=110,Restaurant,Food & Beverage,free_sources,main-street-grill
+Manuel's Downtown,,Austin,,(512) 472-7555,http://www.opentable.com/manuels-downtown?scpref=110,Restaurant,Food & Beverage,free_sources,manuel-s-downtown
+Manuel's Great Hills,,Austin,,(512) 345-1042,http://www.opentable.com/manuels-great-hills?scpref=110,Restaurant,Food & Beverage,free_sources,manuel-s-great-hills
+Max's Wine Dive - Austin,,Austin,,(512) 904-0111,http://www.opentable.com/maxs-wine-dive-austin?scpref=110,Restaurant,Food & Beverage,free_sources,max-s-wine-dive-austin
+McCormick & Schmick's Seafood - Austin (Century Oaks),,Austin,,(512) 836-0500,http://www.opentable.com/mccormick-and-schmicks-seafood-austin-century-oaks?scpref=110,Restaurant,Food & Beverage,free_sources,mccormick-schmick-s-seafood-austin-century-oaks
+The Melting Pot - Austin - Northwest,,Austin,,(512) 401-2424,http://www.opentable.com/the-melting-pot-austin-northwest?scpref=110,Restaurant,Food & Beverage,free_sources,the-melting-pot-austin-northwest
+NoRTH - Austin,,Austin,,(512) 339-4400,http://www.opentable.com/north-austin?scpref=110,Restaurant,Food & Beverage,free_sources,north-austin
+Olive and June,,Austin,,(512) 467-9898,http://www.opentable.com/olive-and-june?scpref=110,Restaurant,Food & Beverage,free_sources,olive-and-june
+Olivia,,Austin,,(512) 804-2700,http://www.opentable.com/olivia-austin?scpref=110,Restaurant,Food & Beverage,free_sources,olivia
+Paggi House,,Austin,,(512) 473-3700,http://www.opentable.com/paggi-house?scpref=110,Restaurant,Food & Beverage,free_sources,paggi-house
+Parkside,,Austin,,(512) 474-9898,http://www.opentable.com/parkside?scpref=110,Restaurant,Food & Beverage,free_sources,parkside
+Peche,,Austin,,(512) 494-4011,http://www.opentable.com/rest_profile.aspx?rid=100501&scpref=110,Restaurant,Food & Beverage,free_sources,peche
+Perla's Seafood and Oyster Bar,,Austin,,(512) 291-7300,http://www.opentable.com/perlas-seafood-and-oyster-bar?scpref=110,Restaurant,Food & Beverage,free_sources,perla-s-seafood-and-oyster-bar
+Perry's Steakhouse & Grille - Downtown,,Austin,,(512) 474-6300,http://www.opentable.com/perrys-steakhouse-and-grille-downtown?scpref=110,Restaurant,Food & Beverage,free_sources,perry-s-steakhouse-grille-downtown
+Ranch 616,,Austin,,(512) 479-7616,http://www.opentable.com/ranch-616?scpref=110,Restaurant,Food & Beverage,free_sources,ranch-616
+Restaurant Jezebel,,Austin,,(512) 436-9643,http://www.opentable.com/rest_profile.aspx?rid=97762&scpref=110,Restaurant,Food & Beverage,free_sources,restaurant-jezebel
+Riviera Bistro,,Austin,,(512) 263-2960,http://www.opentable.com/riviera-bistro?scpref=110,Restaurant,Food & Beverage,free_sources,riviera-bistro
+"Roaring Fork-Downtown, Congress",,Austin,,(512) 583-0000,http://www.opentable.com/roaring-fork-downtown-congress?scpref=110,Restaurant,Food & Beverage,free_sources,roaring-fork-downtown-congress
+"Roaring Fork-North Austin, Stonelake",,Austin,,(512) 342-2700,http://www.opentable.com/roaring-fork-north-austin-stonelake?scpref=110,Restaurant,Food & Beverage,free_sources,roaring-fork-north-austin-stonelake
+The Russian House,,Austin,,(347) 840-0093,http://www.opentable.com/the-russian-house?scpref=110,Restaurant,Food & Beverage,free_sources,the-russian-house
+Ruth's Chris Steak House - Austin,,Austin,,(512) 477-7884,http://www.opentable.com/ruths-chris-steak-house-austin?scpref=110,Restaurant,Food & Beverage,free_sources,ruth-s-chris-steak-house-austin
+The Salty Sow,,Austin,,(512) 391-2337,http://www.opentable.com/the-salty-sow?scpref=110,Restaurant,Food & Beverage,free_sources,the-salty-sow
+Santa Catarina Restaurant,,Austin,,(512) 300-0946,http://www.opentable.com/santa-catarina-restaurant?scpref=110,Restaurant,Food & Beverage,free_sources,santa-catarina-restaurant
+Satellite Bistro and Bar,,Austin,,(512) 288-9994,http://www.opentable.com/satellite-bistro-and-bar?scpref=110,Restaurant,Food & Beverage,free_sources,satellite-bistro-and-bar
+Siena Ristorante Toscano,,Austin,,(512) 349-7667,http://www.opentable.com/siena-ristorante-toscano?scpref=110,Restaurant,Food & Beverage,free_sources,siena-ristorante-toscano
+Soleil at The Oasis,,Austin,,(512) 266-0600,http://www.opentable.com/soleil-at-the-oasis?scpref=110,Restaurant,Food & Beverage,free_sources,soleil-at-the-oasis
+SPIN Modern Thai,,Austin,,(512) 258-1365,http://www.opentable.com/spin-modern-thai?scpref=110,Restaurant,Food & Beverage,free_sources,spin-modern-thai
+Steiner Ranch Steakhouse,,Austin,,(512) 381-0800,http://www.opentable.com/steiner-ranch-steakhouse?scpref=110,Restaurant,Food & Beverage,free_sources,steiner-ranch-steakhouse
+Stories Fine Dining Establishment at Hyatt Regency Lost Pines,,Austin,,(512) 308-4860,http://www.opentable.com/stories-fine-dining-establishment-at-hyatt-regency-lost-pines?scpref=110,Restaurant,Food & Beverage,free_sources,stories-fine-dining-establishment-at-hyatt-regency-lost-pines
+Sullivan's Steakhouse - Austin,,Austin,,(512) 495-6504,http://www.opentable.com/sullivans-steakhouse-austin?scpref=110,Restaurant,Food & Beverage,free_sources,sullivan-s-steakhouse-austin
+Sushi Zushi of 5th Street,,Austin,,(512) 474-7000,http://www.opentable.com/sushi-zushi-of-5th-street?scpref=110,Restaurant,Food & Beverage,free_sources,sushi-zushi-of-5th-street
+Sushi Zushi of the Domain,,Austin,,(512) 834-8100,http://www.opentable.com/sushi-zushi-of-the-domain?scpref=110,Restaurant,Food & Beverage,free_sources,sushi-zushi-of-the-domain
+SWB @ the Hyatt Regency Austin,,Austin,,(512) 480-2035,http://www.opentable.com/swb-at-the-hyatt-regency-austin?scpref=110,Restaurant,Food & Beverage,free_sources,swb-the-hyatt-regency-austin
+Swift's Attic,,Austin,,(512) 482-8842,http://www.opentable.com/swifts-attic?scpref=110,Restaurant,Food & Beverage,free_sources,swift-s-attic
+Texas French Bread,,Austin,,(512) 499-0544,http://www.opentable.com/texas-french-bread?scpref=110,Restaurant,Food & Beverage,free_sources,texas-french-bread
+Trace - W - Austin,,Austin,,(512) 542-3660,http://www.opentable.com/trace-w-austin?scpref=110,Restaurant,Food & Beverage,free_sources,trace-w-austin
+Trattoria Lisina,,Austin,,(512) 894-3111,http://www.opentable.com/trattoria-lisina-austin?scpref=110,Restaurant,Food & Beverage,free_sources,trattoria-lisina
+TRIO - Four Seasons Austin,,Austin,,(512) 685-8300,http://www.opentable.com/trio-four-seasons-austin?scpref=110,Restaurant,Food & Beverage,free_sources,trio-four-seasons-austin
+"Truluck's Seafood, Steak and Crab House - Austin Arboretum",,Austin,,(512) 794-8300,http://www.opentable.com/trulucks-seafood-steak-and-crab-house-austin-arboretum?scpref=110,Restaurant,Food & Beverage,free_sources,truluck-s-seafood-steak-and-crab-house-austin-arboretum
+"Truluck's Seafood, Steak and Crab House - Austin Downtown",,Austin,,(512) 482-9000,http://www.opentable.com/trulucks-seafood-steak-and-crab-house-austin-downtown?scpref=110,Restaurant,Food & Beverage,free_sources,truluck-s-seafood-steak-and-crab-house-austin-downtown
+Uchiko,,Austin,,(512) 916-4808,http://www.opentable.com/uchiko?scpref=110,Restaurant,Food & Beverage,free_sources,uchiko
+urban an american grill,,Austin,,(512) 490-1511,http://www.opentable.com/urban-an-american-grill?scpref=110,Restaurant,Food & Beverage,free_sources,urban-an-american-grill
+Vince Young Steakhouse,,Austin,,(512) 457-8325,http://www.opentable.com/vince-young-steakhouse?scpref=110,Restaurant,Food & Beverage,free_sources,vince-young-steakhouse
+wink,,Austin,,(512) 482-8868,http://www.opentable.com/wink?scpref=110,Restaurant,Food & Beverage,free_sources,wink
+The Woodland,,Austin,,(512) 441-6800,http://www.opentable.com/the-woodland?scpref=110,Restaurant,Food & Beverage,free_sources,the-woodland
+Zax Restaurant & Bar,,Austin,,(512) 481-0100,http://www.opentable.com/zax-restaurant-and-bar?scpref=110,Restaurant,Food & Beverage,free_sources,zax-restaurant-bar
+Z'Tejas Arboretum,,Austin,,(512) 346-3506,http://www.opentable.com/ztejas-arboretum?scpref=110,Restaurant,Food & Beverage,free_sources,z-tejas-arboretum
+Z'Tejas Austin 6th St,,Austin,,(512) 478-5355,http://www.opentable.com/ztejas-austin-6th-st?scpref=110,Restaurant,Food & Beverage,free_sources,z-tejas-austin-6th-st
+Z'Tejas Avery Ranch,,Austin,,(512) 388-7772,http://www.opentable.com/ztejas-avery-ranch?scpref=110,Restaurant,Food & Beverage,free_sources,z-tejas-avery-ranch
