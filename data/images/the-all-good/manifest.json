@@ -1,0 +1,43 @@
+{
+  "business_name": "The All Good",
+  "slug": "the-all-good",
+  "downloaded_at": "2025-11-07T21:52:16.757Z",
+  "total_images": 7,
+  "images": [
+    {
+      "original_url": "https://static.spacecrafted.com/aa5a0400055e4360a4b06b0d21fe04f6/f/7a82b9caadead9af4b8e68060768b543f5d1825d/1/favicon-96x96.png",
+      "local_path": "/Users/matthewrundle/Documents/DomainPRshit/LocalBusinessBuildout/data/images/the-all-good/image-000.png",
+      "filename": "image-000.png"
+    },
+    {
+      "original_url": "https://static.spacecrafted.com/aa5a0400055e4360a4b06b0d21fe04f6/i/b3499d0f5a8e496a8c6c7cbf99f72d8f/1/5feFb8zhrk/Trans%20All%20White%20-%20Square%20TAG.png",
+      "local_path": "/Users/matthewrundle/Documents/DomainPRshit/LocalBusinessBuildout/data/images/the-all-good/image-001.png",
+      "filename": "image-001.png"
+    },
+    {
+      "original_url": "https://static.spacecrafted.com/aa5a0400055e4360a4b06b0d21fe04f6/i/c6de37363a374d2795b8de237983af56/1/GCuCv726gZycFxatknDdac/TheAllGood_114.jpg",
+      "local_path": "/Users/matthewrundle/Documents/DomainPRshit/LocalBusinessBuildout/data/images/the-all-good/image-002.jpg",
+      "filename": "image-002.jpg"
+    },
+    {
+      "original_url": "https://static.spacecrafted.com/aa5a0400055e4360a4b06b0d21fe04f6/i/dd636242b5cc4877827450769d130404/1/GCuCv726gZycFxatknDdac/TheAllGood_149.jpg",
+      "local_path": "/Users/matthewrundle/Documents/DomainPRshit/LocalBusinessBuildout/data/images/the-all-good/image-003.jpg",
+      "filename": "image-003.jpg"
+    },
+    {
+      "original_url": "https://static.spacecrafted.com/aa5a0400055e4360a4b06b0d21fe04f6/i/cf4a5d5678eb4cb59f1b328e5af82b81/1/GCuCv726gZycFxatknDdac/TheAllGood_065%20horizontal.jpeg",
+      "local_path": "/Users/matthewrundle/Documents/DomainPRshit/LocalBusinessBuildout/data/images/the-all-good/image-004.jpeg",
+      "filename": "image-004.jpeg"
+    },
+    {
+      "original_url": "https://static.spacecrafted.com/aa5a0400055e4360a4b06b0d21fe04f6/i/eab20d147be34958acd43756fe0d748d/1/GCuCv726gZycFxatknDdac/TheAllGood_027.jpg",
+      "local_path": "/Users/matthewrundle/Documents/DomainPRshit/LocalBusinessBuildout/data/images/the-all-good/image-005.jpg",
+      "filename": "image-005.jpg"
+    },
+    {
+      "original_url": "https://static.spacecrafted.com/aa5a0400055e4360a4b06b0d21fe04f6/i/c48fa4d17e224e52a2d66031b929c941/1/GCuCv726gZycFxatknDdac/TheAllGood_092.jpg",
+      "local_path": "/Users/matthewrundle/Documents/DomainPRshit/LocalBusinessBuildout/data/images/the-all-good/image-006.jpg",
+      "filename": "image-006.jpg"
+    }
+  ]
+}
