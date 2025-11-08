@@ -15,6 +15,8 @@
     "scrape:google": "node scripts/google-places-scraper.js",
     "scrape:yelp": "node scripts/yelp-api-scraper.js",
     "scrape:chambers": "node scripts/scrape-chambers.js",
+    "scan:websites": "node scripts/scan-websites-local.js",
+    "rate:businesses": "node scripts/rate-businesses.js",
     "consolidate": "node scripts/consolidate-all-businesses.js",
     "import:csv": "node scripts/import-businesses-csv.js",
     "compile:all": "npm run scrape:google && npm run scrape:yelp && npm run consolidate"
@@ -32,7 +34,8 @@
     "@mendable/firecrawl-js": "^4.5.0",
     "axios": "^1.6.2",
     "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "puppeteer": "^21.6.0"
   },
   "devDependencies": {
     "prettier": "^3.1.1"
