@@ -19,7 +19,8 @@
     "rate:businesses": "node scripts/rate-businesses.js",
     "consolidate": "node scripts/consolidate-all-businesses.js",
     "import:csv": "node scripts/import-businesses-csv.js",
-    "compile:all": "npm run scrape:google && npm run scrape:yelp && npm run consolidate"
+    "compile:all": "npm run scrape:google && npm run scrape:yelp && npm run consolidate",
+    "clone:templates": "./scripts/clone-templates.sh"
   },
   "keywords": [
     "web-redesign",
