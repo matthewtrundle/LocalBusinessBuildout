@@ -20,6 +20,7 @@ class BusinessConsolidator {
       chamber_scrapes: 0,
       yellowpages: 0,
       free_sources: 0,
+      public_companies: 0,
       csv_imports: 0,
     };
   }
@@ -31,6 +32,7 @@ class BusinessConsolidator {
     await this.loadManualDatabase();
     await this.loadRealBusinesses();
     await this.loadFreeSourcesData();
+    await this.loadPublicCompaniesData();
     await this.loadChamberData();
     await this.loadYellowPagesData();
     await this.loadCSVImports();
@@ -81,6 +83,23 @@ class BusinessConsolidator {
       this.sources.free_sources = businesses.length;
     } catch (error) {
       console.log('   ℹ️  No free sources data found\n');
+    }
+  }
+
+  async loadPublicCompaniesData() {
+    try {
+      const publicPath = '/home/user/LocalBusinessBuildout/data/austin-public-companies-parsed.json';
+      const data = await fs.readFile(publicPath, 'utf-8');
+      const businesses = JSON.parse(data);
+      console.log('📚 Loading Austin public companies (GitHub)...');
+      businesses.forEach(b => {
+        b.source = 'public_companies';
+        this.addBusiness(b);
+      });
+      console.log(`   ✓ Loaded ${businesses.length} businesses\n`);
+      this.sources.public_companies = businesses.length;
+    } catch (error) {
+      console.log('   ℹ️  No public companies data found\n');
     }
   }
 
