@@ -1,0 +1,82 @@
+Business Name,Address,City,Zip,Phone,Website,Category,Industry,Source,Slug
+Franklin Barbecue,"900 E 11th St, Austin, TX 78702",Austin,78702,(512) 653-1187,,BBQ,restaurant,manual_database,franklin-barbecue
+Torchy's Tacos,"Multiple Locations, Austin, TX",Austin,78704,(512) 366-0537,,Mexican Food,restaurant,manual_database,torchy-s-tacos
+Uchi,"801 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 916-4808,,Sushi,restaurant,manual_database,uchi
+Matt's El Rancho,"2613 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 462-9333,,Mexican Food,restaurant,manual_database,matt-s-el-rancho
+Hopdoddy Burger Bar,"Multiple Locations, Austin, TX",Austin,78701,(512) 243-7505,,Burgers,restaurant,manual_database,hopdoddy-burger-bar
+Kerbey Lane Cafe,"Multiple Locations, Austin, TX",Austin,78704,(512) 451-1436,,American Diner,restaurant,manual_database,kerbey-lane-cafe
+La Barbecue,"2027 E Cesar Chavez St, Austin, TX 78702",Austin,78702,(512) 605-9696,,BBQ,restaurant,manual_database,la-barbecue
+Home Slice Pizza,"1415 S Congress Ave, Austin, TX 78704",Austin,78704,(512) 444-7437,,Pizza,restaurant,manual_database,home-slice-pizza
+Chuy's,"1728 Barton Springs Rd, Austin, TX 78704",Austin,78704,(512) 474-4452,,Mexican Food,restaurant,manual_database,chuy-s
+Polvos Mexican Restaurant,"2004 S 1st St, Austin, TX 78704",Austin,78704,(512) 441-5446,,Mexican Food,restaurant,manual_database,polvos-mexican-restaurant
+The Salt Lick BBQ,"18300 FM 1826, Driftwood, TX 78619",Driftwood,78619,(512) 858-4959,,BBQ,restaurant,manual_database,the-salt-lick-bbq
+Terry Black's Barbecue,"1003 Barton Springs Rd, Austin, TX 78704",Austin,78704,(512) 394-5899,,BBQ,restaurant,manual_database,terry-black-s-barbecue
+Loro,"2115 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 916-4100,,Asian BBQ,restaurant,manual_database,loro
+Odd Duck,"1201 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 433-6521,,American Contemporary,restaurant,manual_database,odd-duck
+Magnolia Cafe,"Multiple Locations, Austin, TX",Austin,78701,(512) 445-0000,,American Diner,restaurant,manual_database,magnolia-cafe
+Jo's Coffee,"1300 S Congress Ave, Austin, TX 78704",Austin,78704,(512) 444-3800,,Coffee Shop,cafe,manual_database,jo-s-coffee
+Houndstooth Coffee,"Multiple Locations, Austin, TX",Austin,78702,(512) 394-5776,,Coffee Shop,cafe,manual_database,houndstooth-coffee
+Caffé Medici,"Multiple Locations, Austin, TX",Austin,78705,(512) 474-5730,,Coffee Shop,cafe,manual_database,caff-medici
+Cosmic Coffee + Beer Garden,"121 Pickle Rd, Austin, TX 78704",Austin,78704,(512) 386-0900,,Coffee Shop,cafe,manual_database,cosmic-coffee-beer-garden
+Mozart's Coffee Roasters,"3825 Lake Austin Blvd, Austin, TX 78703",Austin,78703,(512) 477-2900,,Coffee Shop,cafe,manual_database,mozart-s-coffee-roasters
+The Austin Beer Garden Brewing Company,"1305 W Oltorf St, Austin, TX 78704",Austin,78704,(512) 300-2337,,Brewery,brewery,manual_database,the-austin-beer-garden-brewing-company
+Pinthouse Pizza,"Multiple Locations, Austin, TX",Austin,78757,(512) 436-9605,,Brewery & Pizza,brewery,manual_database,pinthouse-pizza
+Jester King Brewery,"13005 Fitzhugh Rd, Austin, TX 78736",Austin,78736,(512) 537-5100,,Brewery,brewery,manual_database,jester-king-brewery
+Oddwood Brewing,"7601 Springdale Rd, Austin, TX 78724",Austin,78724,(512) 220-7722,,Brewery,brewery,manual_database,oddwood-brewing
+Live Oak Brewing Company,"1615 Crozier Ln, Austin, TX 78741",Austin,78741,(512) 385-2299,,Brewery,brewery,manual_database,live-oak-brewing-company
+Independence Brewing Company,"3913 Todd Ln #607, Austin, TX 78744",Austin,78744,(512) 707-0099,,Brewery,brewery,manual_database,independence-brewing-company
+Blue Corn Harvest Bar & Grill,"700 E Whitestone Blvd #204, Cedar Park, TX 78613",Cedar Park,78613,(512) 528-0889,,American,restaurant,manual_database; real_businesses,blue-corn-harvest-bar-grill
+Red Horn Coffee House,"600 E Whitestone Blvd, Cedar Park, TX 78613",Cedar Park,78613,(512) 259-5005,,Coffee Shop,cafe,manual_database,red-horn-coffee-house
+Black Sugar Caffe,"1700 E Whitestone Blvd #170, Cedar Park, TX 78613",Cedar Park,78613,(512) 986-4020,,Coffee Shop,cafe,manual_database,black-sugar-caffe
+La Dosis Coffee + Cocktails,"601 E Whitestone Blvd, Cedar Park, TX 78613",Cedar Park,78613,(512) 259-3333,,Coffee Shop,cafe,manual_database,la-dosis-coffee-cocktails
+1431 Cafe,"601 E Whitestone Blvd, Suite 300, Cedar Park, TX 78613",Cedar Park,78613,(512) 528-0606,,Coffee Shop,cafe,manual_database,1431-cafe
+Cedar Park Barbershop,"401 Cypress Creek Road, Suite 300, Cedar Park, TX 78613",Cedar Park,78613,(512) 260-5599,,Barbershop,salon,manual_database,cedar-park-barbershop
+Danny's Barber Shop,"2301 S. Lakeline Blvd., Ste. 400, Cedar Park, TX 78613",Cedar Park,78613,(512) 331-8404,,Barbershop,salon,manual_database,danny-s-barber-shop
+Derrick's Barbershop,"14900 Avery Ranch Blvd, Austin, TX 78717",Austin,78717,(512) 331-6000,,Barbershop,salon,manual_database,derrick-s-barbershop
+Gambuzza's Barbershop,"1300 Cypress Creek Rd, Cedar Park, TX 78613",Cedar Park,78613,(512) 528-3838,,Barbershop,salon,manual_database,gambuzza-s-barbershop
+bex + Co. Salon,"1700 E Whitestone Blvd, Cedar Park, TX 78613",Cedar Park,78613,(512) 986-4959,,Hair Salon,salon,manual_database,bex-co-salon
+Bang Salon & Day Spa,"601 East Whitestone Boulevard #214, Cedar Park, TX 78613",Cedar Park,78613,(512) 528-9600,,Salon & Spa,salon,manual_database,bang-salon-day-spa
+Round Rock Donuts,"106 E Main St, Round Rock, TX 78664",Round Rock,78664,(512) 255-3629,,Bakery,restaurant,manual_database,round-rock-donuts
+Kerbey Lane Cafe Round Rock,"200 University Blvd, Round Rock, TX 78665",Round Rock,78665,(512) 244-3789,,American Diner,restaurant,manual_database,kerbey-lane-cafe-round-rock
+Clay Pit Contemporary Indian Cuisine - Round Rock,"1701 E Palm Valley Blvd, Round Rock, TX 78664",Round Rock,78664,(512) 828-0011,,Indian Food,restaurant,manual_database,clay-pit-contemporary-indian-cuisine-round-rock
+Monument Cafe,"1953 S Austin Ave, Georgetown, TX 78626",Georgetown,78626,(512) 930-9586,,American Diner,restaurant,manual_database,monument-cafe
+600 Degrees Pizzeria & Drafthouse,"100 E 8th St, Georgetown, TX 78626",Georgetown,78626,(512) 819-3663,,Pizza,restaurant,manual_database,600-degrees-pizzeria-drafthouse
+Dos Salsas,"1104 S Main St, Georgetown, TX 78626",Georgetown,78626,(512) 863-8686,,Mexican Food,restaurant,manual_database,dos-salsas
+Stiles Switch BBQ & Brew,"6610 N Interstate 35 Frontage Rd, Austin, TX 78752",Austin,78752,(512) 382-7470,,BBQ,restaurant,manual_database,stiles-switch-bbq-brew
+Mouton's Southern Bistro,"305 S US Highway 183, Leander, TX 78641",Leander,78641,(512) 259-2618,,Cajun/Southern,restaurant,manual_database,mouton-s-southern-bistro
+Aspire Dental,"Multiple Locations, Austin, TX",Austin,78701,(512) 469-6594,,Dentist,healthcare,manual_database,aspire-dental
+Great Hills Family Dentistry,"9503 Stonelake Blvd #100, Austin, TX 78759",Austin,78759,(512) 272-3139,,Dentist,healthcare,manual_database,great-hills-family-dentistry
+Four Points Dental Studio,"7300 Ranch Rd 620 N #110, Austin, TX 78726",Austin,78726,(512) 795-7300,,Dentist,healthcare,manual_database,four-points-dental-studio
+ABC Home & Commercial Services,"9475 E Highway 290, Austin, TX 78724",Austin,78724,(512) 837-9500,,Pest Control & HVAC,services,manual_database,abc-home-commercial-services
+Stan's Heating Air Plumbing & Electrical,"Multiple Locations, Austin, TX",Austin,78728,(512) 533-8149,,HVAC & Plumbing,services,manual_database,stan-s-heating-air-plumbing-electrical
+Radiant Plumbing and Air Conditioning,"Multiple Locations, Austin, TX",Austin,78744,(512) 772-3581,,Plumbing & HVAC,services,manual_database,radiant-plumbing-and-air-conditioning
+Precision Air & Heating,"3071 County Road 100, Hutto, TX 78634",Hutto,78634,(512) 379-4800,,HVAC,services,manual_database,precision-air-heating
+Goettl Air Conditioning & Plumbing,"13785 Research Blvd, Austin, TX 78750",Austin,78750,(512) 832-5222,,HVAC & Plumbing,services,manual_database,goettl-air-conditioning-plumbing
+Yost Automotive,"9101 S 1st St #180, Austin, TX 78748",Austin,78748,(512) 351-3141,,Auto Repair,automotive,manual_database,yost-automotive
+Christian Brothers Automotive,"Multiple Locations, Austin, TX",Austin,78759,(512) 730-2100,,Auto Repair,automotive,manual_database,christian-brothers-automotive
+European Specialists,"906 W Howard Ln, Austin, TX 78753",Austin,78753,(512) 835-5566,,European Auto Repair,automotive,manual_database,european-specialists
+Realty Austin,"1209 W 5th St, Austin, TX 78703",Austin,78703,(512) 241-1300,,Real Estate,real_estate,manual_database,realty-austin
+Moreland Properties,"1601 Rio Grande St, Austin, TX 78701",Austin,78701,(512) 480-0848,,Real Estate,real_estate,manual_database,moreland-properties
+Minton Law Firm,"100 Congress Ave Suite 2000, Austin, TX 78701",Austin,78701,(512) 474-3633,,Law Firm,legal,manual_database,minton-law-firm
+Padgett Business Services,"Multiple Locations, Austin, TX",Austin,78748,(512) 291-7500,,Accounting & Tax,accounting,manual_database,padgett-business-services
+Waterloo Records,"600A N Lamar Blvd, Austin, TX 78703",Austin,78703,(512) 474-2500,,Music Store,retail,manual_database,waterloo-records
+BookPeople,"603 N Lamar Blvd, Austin, TX 78703",Austin,78703,(512) 472-5050,,Bookstore,retail,manual_database,bookpeople
+Toy Joy,"403 W 2nd St, Austin, TX 78701",Austin,78701,(512) 320-0090,,Toy Store,retail,manual_database,toy-joy
+Allen's Boots,"1522 S Lamar Blvd, Austin, TX 78704",Austin,78704,(512) 447-1413,,Western Wear,retail,manual_database,allen-s-boots
+Castle Hill Fitness,"2201 Lake Austin Blvd, Austin, TX 78703",Austin,78703,(512) 476-5200,,Gym,fitness,manual_database,castle-hill-fitness
+Lifetime Athletic,"Multiple Locations, Austin, TX",Austin,78759,(512) 617-5100,,Athletic Club,fitness,manual_database,lifetime-athletic
+Red Horn Coffee House,"Cedar Park, TX",Cedar Park,,,,,cafe,real_businesses,red-horn-coffee-house
+Black Sugar Caffe,"Cedar Park, TX",Cedar Park,,,,,cafe,real_businesses,black-sugar-caffe
+La Dosis Coffee + Cocktails,"Cedar Park, TX",Cedar Park,,,,,cafe,real_businesses,la-dosis-coffee-cocktails
+1431 Cafe,"601 E Whitestone Blvd, Suite 300, Cedar Park, TX",Cedar Park,,,,,cafe,real_businesses,1431-cafe
+Cedar Park Barbershop,"401 Cypress Creek Road, Suite 300, Cedar Park, TX",Cedar Park,,,,,salon,real_businesses,cedar-park-barbershop
+Danny's Barber Shop,"2301 S. Lakeline Blvd., Ste. 400, Cedar Park, TX",Cedar Park,,,,,salon,real_businesses,danny-s-barber-shop
+Derrick's Barbershop,"Cedar Park, TX",Cedar Park,,,,,salon,real_businesses,derrick-s-barbershop
+Gambuzza's Barbershop,"Cedar Park, TX",Cedar Park,,,,,salon,real_businesses,gambuzza-s-barbershop
+bex + Co. Salon,"Cedar Park, TX",Cedar Park,,,,,salon,real_businesses,bex-co-salon
+Bang Salon & Day Spa,"601 East Whitestone Boulevard #214, Cedar Park, TX",Cedar Park,,,,,salon,real_businesses,bang-salon-day-spa
+The Austin Beer Garden Brewing Company,"Austin, TX",Austin,,,,,brewery,real_businesses,the-austin-beer-garden-brewing-company
+Pinthouse,"Austin, TX",Austin,,,,,brewery,real_businesses,pinthouse
+Jester King Brewery,"Austin, TX",Austin,,,,,brewery,real_businesses,jester-king-brewery
+Oddwood Brewing,"Airport and Manor Rd, East Austin, TX",Austin,,,,,brewery,real_businesses,oddwood-brewing
+Tony C's Beer Garden,"Austin, TX",Austin,,,,,brewery,real_businesses,tony-c-s-beer-garden

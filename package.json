@@ -11,7 +11,13 @@
     "redesign": "node scripts/agents/redesign-agent.js",
     "deploy": "node scripts/agents/deploy-agent.js",
     "outreach": "node scripts/agents/outreach-agent.js",
-    "test": "node scripts/orchestrator.js --limit 5"
+    "test": "node scripts/orchestrator.js --limit 5",
+    "scrape:google": "node scripts/google-places-scraper.js",
+    "scrape:yelp": "node scripts/yelp-api-scraper.js",
+    "scrape:chambers": "node scripts/scrape-chambers.js",
+    "consolidate": "node scripts/consolidate-all-businesses.js",
+    "import:csv": "node scripts/import-businesses-csv.js",
+    "compile:all": "npm run scrape:google && npm run scrape:yelp && npm run consolidate"
   },
   "keywords": [
     "web-redesign",
