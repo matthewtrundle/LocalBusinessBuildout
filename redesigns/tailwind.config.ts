@@ -26,6 +26,7 @@ const config: Config = {
         'slide-up': 'slideUp 0.5s ease-out',
         'fade-in': 'fadeIn 0.6s ease-out',
         'scale-in': 'scaleIn 0.5s ease-out',
+        'blob': 'blob 7s ease-in-out infinite',
       },
       keyframes: {
         float: {
@@ -43,6 +44,14 @@ const config: Config = {
         scaleIn: {
           '0%': { transform: 'scale(0.9)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+        blob: {
+          '0%, 100%': {
+            borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
+          },
+          '50%': {
+            borderRadius: '30% 60% 70% 40% / 50% 60% 30% 60%',
+          },
         },
       },
     },
