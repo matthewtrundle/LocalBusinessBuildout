@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/businesses',
+  // basePath removed - business pages now at root level (e.g., /franklin-barbecue)
   trailingSlash: true,
 }
 
