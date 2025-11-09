@@ -64,7 +64,7 @@ export default function JosCoffeePage() {
                 }}
               >
                 i love you
-              </motion.h2>
+              </motion.h1>
               <motion.h2
                 animate={{
                   scale: [1, 1.05, 1],
