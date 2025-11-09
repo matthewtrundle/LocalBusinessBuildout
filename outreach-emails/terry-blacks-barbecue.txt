@@ -1,0 +1,116 @@
+================================================================================
+TO: Terry Black's Barbecue
+PHONE: (512) 394-5899
+EMAIL: NEED_EMAIL
+CATEGORY: BBQ
+CITY: Austin
+================================================================================
+
+Subject: Quick Question About Terry Black's Barbecue's Online Presence
+
+Hi Terry team,
+
+Your BBQ has built quite a reputation, and I wanted to reach out with something I think you'll find interesting.
+
+I'm a web designer based in Austin, and I specialize in helping local bbq businesses like yours compete more effectively online.
+
+**I actually took the liberty of creating a modern redesign concept for Terry Black's Barbecue** to show you what's possible. You can view it here:
+
+🔗 **https://your-deployment-url.vercel.app/terry-blacks-barbecue**
+
+*(No obligation - I just wanted to show rather than tell)*
+
+**Why I reached out:**
+
+Many bbq businesses I talk to struggle with:
+• attracting diners in an increasingly competitive market
+• showcasing your menu and atmosphere in a way that drives reservations
+• building an online presence that matches your in-person experience
+
+The redesign concept I created for you focuses on solving these exact challenges with:
+
+✓ Menu showcase that makes mouths water
+✓ Easy reservation system integration
+✓ Event hosting and private dining information
+✓ Mobile-optimized for on-the-go diners
+
+**Here's what makes this different:**
+
+Unlike template-based sites, this is 100% custom code built specifically for Terry Black's Barbecue. I used:
+• Next.js 14 (cutting-edge React framework)
+• Advanced animations and effects
+• Mobile-first responsive design
+• Performance optimization for fast load times
+
+**No pressure, but...**
+
+If you like what you see, I'd love to chat about:
+1. Your current website challenges
+2. What features would make the biggest impact for your business
+3. How we could refine this concept to perfectly match your vision
+
+I'm offering **special pricing for Cedar Park/Austin businesses** this month - typically $5,000+ projects starting at $2,500 for local businesses I believe in.
+
+Would you have 15 minutes this week for a quick call? I promise to respect your time.
+
+Best regards,
+
+---
+
+**P.S.** - Even if you're not interested in a new website right now, I'd love your feedback on the redesign. What do you like? What would you change? Your insights help me create better work for local businesses.
+
+**P.P.S.** - I'm also happy to share some quick wins you could implement on your current site to improve conversions - completely free, no strings attached.
+
+---
+
+📱 **Quick Stats:**
+• 75% of users judge a company's credibility based on website design
+• Mobile searches for "bbq near me" have grown 200% in 3 years
+• Businesses with modern websites see 40% higher customer engagement
+
+**View Your Redesign:** https://your-deployment-url.vercel.app/terry-blacks-barbecue
+
+================================================================================
+FOLLOW-UP SEQUENCE (if no response after 1 week):
+================================================================================
+
+**Follow-up #1 (3 days later):**
+
+Subject: Re: Terry Black's Barbecue Redesign Concept
+
+Hi again,
+
+Just wanted to make sure my previous email didn't get lost in your inbox!
+
+I created a custom redesign concept for Terry Black's Barbecue and I'm genuinely curious what you think:
+https://your-deployment.vercel.app/terryblacksbbq.com
+
+Even if you're not interested in updating your website right now, I'd love 30 seconds of feedback.
+
+What do you like? What would you change?
+
+Thanks!
+
+---
+
+**Follow-up #2 (1 week later):**
+
+Subject: Last call - Terry Black's Barbecue redesign
+
+Hi,
+
+I know you're busy running Terry Black's Barbecue, so I'll keep this super brief.
+
+I spent time creating a modern redesign concept for you because:
+1. I genuinely admire what you've built
+2. I think a website refresh could drive real business results
+3. I wanted to show (not tell) what's possible
+
+This is my last email - I don't want to be a pest!
+
+But if you're even 1% curious, take 60 seconds to check it out:
+[REDESIGN URL]
+
+Either way, best of luck with the business. You're doing great work in Austin.
+
+Cheers!

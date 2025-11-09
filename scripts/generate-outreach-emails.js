@@ -13,15 +13,13 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Businesses we've built redesigns for
+// All 68 actual businesses we've built redesigns for (excluding 10 showcase demos)
 const builtBusinesses = [
+  // Original businesses (already have emails for some)
   '1431-cafe',
-  'bang-salon-day-spa',
   'bex-co-salon',
   'black-sugar-caffe',
-  'blue-corn-harvest-bar-grill',
   'cedar-park-barbershop',
-  'danny-s-barber-shop',
   'derrick-s-barbershop',
   'gambuzza-s-barbershop',
   'jester-king-brewery',
@@ -31,6 +29,63 @@ const builtBusinesses = [
   'red-horn-coffee-house',
   'the-austin-beer-garden-brewing-company',
   'tony-c-s-beer-garden',
+
+  // Batch 1: Tier-1 Iconic Austin Businesses
+  'franklin-barbecue',
+  'torchys-tacos',
+  'uchi',
+  'jos-coffee',
+  'mozarts-coffee',
+  'home-slice-pizza',
+  'terry-blacks-barbecue',
+  'kerbey-lane-cafe',
+  'houndstooth-coffee',
+  'salt-lick-bbq',
+
+  // Batch 2: Premium Tier-2
+  'odd-duck',
+  'loro',
+  'uchiko',
+  'matts-el-rancho',
+  'live-oak-brewing',
+  'hops-and-grain',
+  'craft-pride',
+  'waterloo-records',
+  'barton-springs-pool',
+  'mount-bonnell',
+
+  // Batch 3: Tier-2/3 Mix
+  'kerbey-lane-north',
+  'epoch-coffee',
+  'summermoon-coffee',
+  'alamo-drafthouse',
+  'ramen-tatsuya',
+  'veracruz-all-natural',
+  'chuy-s',
+  'juan-in-a-million',
+  'gueros-taco-bar',
+  'kontiki-beach-club',
+
+  // Batches 4-5: Final Businesses
+  'trudy-s-texas-star',
+  'el-arroyo',
+  'la-barbecue',
+  'micklethwait-craft-meats',
+  'texas-chili-parlor',
+  'hopdoddy-burger-bar',
+  'the-tavern',
+  'easy-tiger',
+  'p-terrys',
+  'thunder-cloud-subs',
+  'pool-burger',
+  'the-beer-plant',
+  'star-bar',
+  'high-brew-coffee',
+  'whip-in',
+  'via-313',
+  'sno-beach',
+  'halcyon-coffee',
+  'house-wine',
 ];
 
 // Helper: Convert business name to slug

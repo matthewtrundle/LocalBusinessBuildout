@@ -1,7 +1,7 @@
 # Outreach Email Campaign Summary
 
 ## Overview
-- **Total Businesses**: 9
+- **Total Businesses**: 23
 - **Campaign Focus**: Cedar Park & Austin local businesses
 - **Approach**: Custom redesign as proof of value
 
@@ -69,6 +69,104 @@
 - **Phone**: (512) 300-2337
 - **Email**: NEED_EMAIL
 - **File**: `the-austin-beer-garden-brewing-company.txt`
+
+### Franklin Barbecue
+- **Category**: BBQ
+- **City**: Austin
+- **Phone**: (512) 653-1187
+- **Email**: NEED_EMAIL
+- **File**: `franklin-barbecue.txt`
+
+### Torchy's Tacos
+- **Category**: Mexican Food
+- **City**: Austin
+- **Phone**: (512) 366-0537
+- **Email**: NEED_EMAIL
+- **File**: `torchys-tacos.txt`
+
+### Uchi
+- **Category**: Sushi
+- **City**: Austin
+- **Phone**: (512) 916-4808
+- **Email**: NEED_EMAIL
+- **File**: `uchi.txt`
+
+### Jo's Coffee
+- **Category**: Coffee Shop
+- **City**: Austin
+- **Phone**: (512) 444-3800
+- **Email**: NEED_EMAIL
+- **File**: `jos-coffee.txt`
+
+### Home Slice Pizza
+- **Category**: Pizza
+- **City**: Austin
+- **Phone**: (512) 444-7437
+- **Email**: NEED_EMAIL
+- **File**: `home-slice-pizza.txt`
+
+### Terry Black's Barbecue
+- **Category**: BBQ
+- **City**: Austin
+- **Phone**: (512) 394-5899
+- **Email**: NEED_EMAIL
+- **File**: `terry-blacks-barbecue.txt`
+
+### Kerbey Lane Cafe
+- **Category**: American Diner
+- **City**: Austin
+- **Phone**: (512) 451-1436
+- **Email**: NEED_EMAIL
+- **File**: `kerbey-lane-cafe.txt`
+
+### Houndstooth Coffee
+- **Category**: Coffee Shop
+- **City**: Austin
+- **Phone**: (512) 394-5776
+- **Email**: NEED_EMAIL
+- **File**: `houndstooth-coffee.txt`
+
+### Odd Duck
+- **Category**: American Contemporary
+- **City**: Austin
+- **Phone**: (512) 433-6521
+- **Email**: NEED_EMAIL
+- **File**: `odd-duck.txt`
+
+### Loro
+- **Category**: Asian BBQ
+- **City**: Austin
+- **Phone**: (512) 916-4100
+- **Email**: NEED_EMAIL
+- **File**: `loro.txt`
+
+### Matt's El Rancho
+- **Category**: Mexican Food
+- **City**: Austin
+- **Phone**: (512) 462-9333
+- **Email**: NEED_EMAIL
+- **File**: `matts-el-rancho.txt`
+
+### Waterloo Records
+- **Category**: Music Store
+- **City**: Austin
+- **Phone**: (512) 474-2500
+- **Email**: NEED_EMAIL
+- **File**: `waterloo-records.txt`
+
+### La Barbecue
+- **Category**: BBQ
+- **City**: Austin
+- **Phone**: (512) 605-9696
+- **Email**: NEED_EMAIL
+- **File**: `la-barbecue.txt`
+
+### Hopdoddy Burger Bar
+- **Category**: Burgers
+- **City**: Austin
+- **Phone**: (512) 243-7505
+- **Email**: NEED_EMAIL
+- **File**: `hopdoddy-burger-bar.txt`
 
 
 ## Outreach Strategy
